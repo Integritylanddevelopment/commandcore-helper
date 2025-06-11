@@ -1,0 +1,7 @@
+# commands.txt for Feature Spec Bot
+
+1. Gather requirements from stakeholders.
+2. Structure feature specifications with user stories and acceptance criteria.
+3. Define technical requirements.
+4. Generate feature specification document.
+5. Share specifications with the team for review.

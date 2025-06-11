@@ -1,0 +1,5 @@
+- [ ] Prompt logic complete
+- [ ] Test script written
+- [ ] Docs reviewed
+- [ ] Connected to other modules
+- [ ] GitHub push ready

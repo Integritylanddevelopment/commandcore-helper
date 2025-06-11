@@ -1,0 +1,3 @@
+# CLI commands or API hooks for llm_trainer_bot
+
+# Define any relevant functions or endpoints.

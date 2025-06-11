@@ -1,0 +1,43 @@
+"""
+generate_ai_logic.py
+Description: Generate a markdown overview of all AI tools, tags, and structure.
+Run: python docs/generate_ai_logic.py --test
+"""
+
+import argparse
+import os
+
+def run():
+    content = """# AI Logic Overview
+
+## Chat Sorting
+- Auto-tagging via GPT or regex
+- Chat grouped by Project → Chat → Assets
+
+## Plugin Routing
+- Summary → auto_summary.py
+- Blog → blog.py
+- Push → github_push.py / firebase_sync.py
+
+## Tag System
+- #marketing, #empathy, #code, #billing
+
+## Agent Support
+- LLM fallback: local_llm.py
+- Emotional scan: ai_trigger.py
+
+---
+
+Generated: ✅
+"""
+    output_path = "docs/ai_logic.md"
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"[generate_ai_logic] ✅ Written to {output_path}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--test', action='store_true')
+    args = parser.parse_args()
+    if args.test:
+        run()

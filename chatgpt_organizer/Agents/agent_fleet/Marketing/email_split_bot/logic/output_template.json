@@ -1,0 +1,10 @@
+{
+  "example": "TODO: Add output_template",
+  "segments": [
+    {
+      "title": "string",
+      "content": "string",
+      "actionable": "boolean"
+    }
+  ]
+}

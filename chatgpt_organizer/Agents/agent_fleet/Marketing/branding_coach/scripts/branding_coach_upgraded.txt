@@ -1,0 +1,88 @@
+# agents/branding_coach.py
+
+"""
+Agent Name: branding_coach
+Role: marketing
+Version: 1.0.0
+Description: Refines brand tone, voice, and presentation across assets.
+"""
+
+import json
+from agents.agent_core import BaseAgent
+from core.scheduler import schedule_task
+from core.messaging import handle_message
+from core.webhooks import register_webhook
+from core.training import register_training_example
+from core.upgrader import inject
+from registry.agent_registry import register_agent
+from utils.branding_tools import run_logic
+
+# Agent Metadata
+agent_name = "branding_coach"
+agent_description = "Refines brand tone, voice, and presentation across assets."
+agent_role = "marketing"
+agent_version = "1.0.0"
+
+# Input Schema
+expected_input = {
+    "brand_tone": "luxury",
+    "examples": [
+        "Herm\u00e8s",
+        "Ritz-Carlton"
+    ]
+}
+# Output Schema
+output_format = {
+    "advice": "Use serif fonts, elegant spacing, minimal copy"
+}
+
+class BrandingCoach(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name=agent_name,
+            description=agent_description,
+            role=agent_role,
+            version=agent_version,
+            input_schema=expected_input,
+            output_schema=output_format
+        )
+
+    def run(self, context):
+        try:
+            result = run_logic(context)
+            self.log("Task completed.")
+            return result
+        except Exception as e:
+            self.error(f"Execution failed: {str(e)}")
+            return {"error": str(e)}            
+
+    def auto_schedule(self):
+        schedule_task(agent_name, self.run, day_of_week="fri", hour=7)
+
+    def message_hooks(self, message_data):
+        if "branding" in message_data.get("intent", ""):
+            return self.run(message_data.get("context", {}))
+        return {"status": "ignored"}
+
+    def webhook_handler(self, payload):
+        context = payload.get("branding_context", {})
+        return self.run(context)
+
+    def training_data(self):
+        examples = [
+            {
+                "input": {"brand_tone": "luxury", "examples": ["Herm\u00e8s", "Ritz-Carlton"]},
+                "output": {"advice": "Use serif fonts, elegant spacing, minimal copy"}
+            }
+        ]
+        for example in examples:
+            register_training_example(agent_name, example["input"], example["output"])
+
+# Register
+register_agent(BrandingCoach)
+
+# Dev stub
+if __name__ == "__main__":
+    bot = inject(BrandingCoach())
+    result = bot.run({"brand_tone": "luxury", "examples": ["Herm\u00e8s", "Ritz-Carlton"]})
+    print(json.dumps(result, indent=2))

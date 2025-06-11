@@ -1,0 +1,14 @@
+{
+  "feature_request": {
+    "title": "User Profile Customization",
+    "description": "Allow users to customize their profile with themes and layouts.",
+    "user_stories": [
+      "As a user, I want to select a theme for my profile so that it reflects my personality.",
+      "As a user, I want to rearrange the layout of my profile to suit my preferences."
+    ],
+    "acceptance_criteria": [
+      "Users can select from at least 5 themes.",
+      "Users can drag and drop elements to rearrange their profile layout."
+    ]
+  }
+}

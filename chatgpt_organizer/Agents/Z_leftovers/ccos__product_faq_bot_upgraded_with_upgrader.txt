@@ -1,0 +1,84 @@
+# agents/product_faq_bot.py
+
+"""
+Agent Name: product_faq_bot
+Role: support
+Version: 1.0.0
+Description: Generates dynamic product FAQ entries from support logs and product data.
+"""
+
+import json
+from agents.agent_core import BaseAgent
+from core.scheduler import schedule_task
+from core.messaging import handle_message
+from core.webhooks import register_webhook
+from core.training import register_training_example
+from core.upgrader import inject
+from registry.agent_registry import register_agent
+from utils.faq_generator import run_logic
+
+# Agent Metadata
+agent_name = "product_faq_bot"
+agent_description = "Generates dynamic product FAQ entries from support logs and product data."
+agent_role = "support"
+agent_version = "1.0.0"
+
+# Input Schema
+expected_input = {
+    "question": "How do I cancel my subscription?"
+}
+# Output Schema
+output_format = {
+    "answer": "Go to Settings > Billing and click Cancel Subscription."
+}
+
+class ProductFaqBot(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name=agent_name,
+            description=agent_description,
+            role=agent_role,
+            version=agent_version,
+            input_schema=expected_input,
+            output_schema=output_format
+        )
+
+    def run(self, context):
+        try:
+            result = run_logic(context)
+            self.log("Task completed.")
+            return result
+        except Exception as e:
+            self.error(f"Execution failed: {str(e)}")
+            return {"error": str(e)}            
+
+    def auto_schedule(self):
+        schedule_task(agent_name, self.run, day_of_week="fri", hour=7)
+
+    def message_hooks(self, message_data):
+        if "faq" in message_data.get("intent", ""):
+            return self.run(message_data.get("context", {}))
+        return {"status": "ignored"}
+
+    def webhook_handler(self, payload):
+        context = payload.get("faq_context", {})
+        return self.run(context)
+
+    def training_data(self):
+        examples = [
+            {
+                "input": {"question": "How do I cancel my subscription?"},
+                "output": {"answer": "Go to Settings > Billing and click Cancel Subscription."}
+            }
+        ]
+        for example in examples:
+            register_training_example(agent_name, example["input"], example["output"])
+
+# Register
+register_agent(ProductFaqBot)
+
+# Dev stub
+if __name__ == "__main__":
+    bot = inject(ProductFaqBot())
+    result = bot.run({"question": "How do I cancel my subscription?"})
+    print(json.dumps(result, indent=2))

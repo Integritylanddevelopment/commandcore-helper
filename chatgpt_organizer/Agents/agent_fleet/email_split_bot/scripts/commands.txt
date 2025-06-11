@@ -1,0 +1,2 @@
+# commands.txt for Email Split
+TODO: Define command flow.

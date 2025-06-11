@@ -1,0 +1,6 @@
+# commands.txt for Ecommerce Advisor
+
+1. Initialize ecommerce analysis.
+2. Process input data.
+3. Generate optimization strategies.
+4. Output results in markdown format.

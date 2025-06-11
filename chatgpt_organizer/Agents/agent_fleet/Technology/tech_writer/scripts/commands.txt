@@ -1,0 +1,3 @@
+# CLI commands or API hooks for tech_writer
+
+# Define any relevant functions or endpoints.

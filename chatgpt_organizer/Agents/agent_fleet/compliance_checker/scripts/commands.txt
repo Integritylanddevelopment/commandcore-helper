@@ -1,0 +1,2 @@
+# commands.txt for Compliance Checker
+TODO: Define command flow.

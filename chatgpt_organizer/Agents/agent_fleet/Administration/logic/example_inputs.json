@@ -1,0 +1,54 @@
+{
+  "examples": [
+    {
+      "task": "Schedule a meeting",
+      "input": {
+        "participants": ["alice@example.com", "bob@example.com"],
+        "date": "2025-06-05",
+        "time": "10:00 AM",
+        "location": "Zoom",
+        "agenda": "Project updates"
+      },
+      "expected_output": {
+        "confirmation": "Meeting scheduled successfully",
+        "details": {
+          "participants": ["alice@example.com", "bob@example.com"],
+          "date": "2025-06-05",
+          "time": "10:00 AM",
+          "location": "Zoom",
+          "agenda": "Project updates"
+        }
+      }
+    },
+    {
+      "task": "Organize documents",
+      "input": {
+        "folder": "Project Alpha",
+        "documents": ["report.pdf", "summary.docx", "budget.xlsx"],
+        "tags": ["finance", "summary"]
+      },
+      "expected_output": {
+        "confirmation": "Documents organized successfully",
+        "folder": "Project Alpha",
+        "documents": ["report.pdf", "summary.docx", "budget.xlsx"],
+        "tags": ["finance", "summary"]
+      }
+    },
+    {
+      "task": "Prioritize tasks",
+      "input": {
+        "tasks": [
+          {"name": "Prepare presentation", "deadline": "2025-06-03"},
+          {"name": "Submit report", "deadline": "2025-06-04"}
+        ]
+      },
+      "expected_output": {
+        "confirmation": "Tasks prioritized successfully",
+        "priority_list": [
+          {"name": "Prepare presentation", "deadline": "2025-06-03"},
+          {"name": "Submit report", "deadline": "2025-06-04"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+# agents/admin_assistant.py
+
+"""
+Agent Name: admin_assistant
+Role: Executive Assistant
+Version: 1.0.0
+Description: Handles scheduling, reminders, and admin tasks for internal operations and executive support.
+"""
+
+import json
+from agents.agent_core import BaseAgent
+from core.scheduler import schedule_task
+from core.messaging import handle_message
+from core.webhooks import register_webhook
+from core.training import register_training_example
+from core.upgrader import inject
+from registry.agent_registry import register_agent
+from utils.task_helper import generate_admin_response  # Hypothetical utility
+
+# Agent Metadata
+agent_name = "admin_assistant"
+agent_description = "Handles task scheduling, reminder creation, and internal coordination support."
+agent_role = "admin"
+agent_version = "1.0.0"
+
+# Input Schema
+expected_input = {
+    "request_type": "string",  # 'schedule_meeting', 'create_reminder', 'summarize_emails'
+    "details": "string",
+    "time": "string",          # ISO timestamp or natural language
+    "priority": "string"       # 'low', 'medium', 'high'
+}
+
+# Output Schema
+output_format = {
+    "confirmation": "string",
+    "scheduled_item": "string",
+    "next_steps": "string"
+}
+
+# Agent Logic
+class AdminAssistant(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name=agent_name,
+            description=agent_description,
+            role=agent_role,
+            version=agent_version,
+            input_schema=expected_input,
+            output_schema=output_format
+        )
+
+    def run(self, context):
+        try:
+            response = generate_admin_response(context)
+            self.log("Admin task completed.")
+            return response
+        except Exception as e:
+            self.error(f"Admin response generation failed: {str(e)}")
+            return {"error": str(e)}
+
+    def auto_schedule(self):
+        schedule_task(agent_name, self.run, day_of_week="mon", hour=8)
+
+    def message_hooks(self, message_data):
+        if "admin" in message_data.get("intent", ""):
+            return self.run(message_data.get("context", {}))
+        return {"status": "ignored"}
+
+    def webhook_handler(self, payload):
+        admin_data = payload.get("admin_context", {})
+        return self.run(admin_data)
+
+    def training_data(self):
+        examples = [
+            {
+                "input": {
+                    "request_type": "schedule_meeting",
+                    "details": "Weekly product sync with team",
+                    "time": "next Thursday at 2pm",
+                    "priority": "high"
+                },
+                "output": {
+                    "confirmation": "Meeting scheduled for next Thursday at 2pm.",
+                    "scheduled_item": "Product Sync",
+                    "next_steps": "Calendar invite sent to all team members."
+                }
+            }
+        ]
+        for example in examples:
+            register_training_example(agent_name, example["input"], example["output"])
+
+# Register the agent
+register_agent(AdminAssistant)
+
+# Dev Test Stub
+if __name__ == "__main__":
+    test_input = {
+        "request_type": "create_reminder",
+        "details": "Submit Stripe invoice",
+        "time": "tomorrow 9am",
+        "priority": "medium"
+    }
+
+    bot = inject(AdminAssistant())
+    result = bot.run(test_input)
+    print(json.dumps(result, indent=2))

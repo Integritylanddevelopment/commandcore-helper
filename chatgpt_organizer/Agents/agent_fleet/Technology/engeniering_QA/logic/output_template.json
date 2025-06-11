@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "high_priority": [
+      {
+        "engineer": "John Doe",
+        "comments": "The current build process is too slow. Consider optimizing the CI/CD pipeline."
+      }
+    ],
+    "medium_priority": [
+      {
+        "engineer": "Jane Smith",
+        "comments": "The documentation for the API is outdated and needs revision."
+      }
+    ]
+  },
+  "recommendations": [
+    "Optimize the CI/CD pipeline to improve build speed.",
+    "Update the API documentation to reflect recent changes."
+  ]
+}

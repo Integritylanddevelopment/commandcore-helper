@@ -1,0 +1,23 @@
+{
+    "agent_id": "analytics_bot",
+    "version": "1.0",
+    "description": "Processes and analyzes data to provide actionable insights for decision-making.",
+    "maintainer": "CommandCore Intelligence Team",
+    "status": "Production Ready",
+    "features": [
+        "Trend analysis",
+        "Performance metrics evaluation",
+        "Predictive modeling",
+        "Customizable dashboards",
+        "Integration with Agent Core",
+        "Error handling",
+        "Logging for traceability"
+    ],
+    "integration": {
+        "agent_core": "Dynamic upgrades and task execution",
+        "llm": "Continuous learning and adaptation"
+    },
+    "invocation": {
+        "example": "from registry.agent_registry import get_agent\nagent = get_agent('analytics_bot')\nresult = agent.run(context)"
+    }
+}

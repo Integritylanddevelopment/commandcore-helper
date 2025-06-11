@@ -1,0 +1,2 @@
+# commands.txt for Infra Monitor
+TODO: Define command flow.

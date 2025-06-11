@@ -1,0 +1,2 @@
+# commands.txt for Bug Reporter
+TODO: Define command flow.

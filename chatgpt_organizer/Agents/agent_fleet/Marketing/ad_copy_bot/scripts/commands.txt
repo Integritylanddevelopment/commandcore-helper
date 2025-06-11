@@ -1,0 +1,23 @@
+# commands.txt for Ad Copy Bot
+
+## Command Flow
+
+1. **Initialize Agent**:
+   - Command: `initialize_ad_copy_bot`
+   - Description: Sets up the agent and loads necessary configurations.
+
+2. **Generate Draft Copy**:
+   - Command: `generate_draft_copy`
+   - Description: Creates initial ad copy based on input parameters.
+
+3. **Optimize Copy**:
+   - Command: `optimize_ad_copy`
+   - Description: Refines the draft using GPT-4 for emotional resonance and platform alignment.
+
+4. **Validate Output**:
+   - Command: `validate_ad_copy`
+   - Description: Ensures the generated copy meets quality standards.
+
+5. **Deploy Copy**:
+   - Command: `deploy_ad_copy`
+   - Description: Sends the finalized ad copy to the specified platform.

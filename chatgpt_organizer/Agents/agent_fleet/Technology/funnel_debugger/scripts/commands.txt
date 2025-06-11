@@ -1,0 +1,2 @@
+# commands.txt for Funnel Debugger
+TODO: Define command flow.

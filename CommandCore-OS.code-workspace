@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "CommandCore-OS",
+			"path": "."
+		},
+		{
+			"name": "BACKUP_CommandCore-OS",
+			"path": "../BACKUP_CommandCore-OS"
+		}
+	],
+	"settings": {}
+}

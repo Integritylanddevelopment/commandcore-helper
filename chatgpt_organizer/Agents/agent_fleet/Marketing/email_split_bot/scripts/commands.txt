@@ -1,0 +1,6 @@
+# commands.txt for Email Split Bot
+
+1. Initialize email splitting process.
+2. Process input email content.
+3. Generate segmented output.
+4. Output results in markdown format.

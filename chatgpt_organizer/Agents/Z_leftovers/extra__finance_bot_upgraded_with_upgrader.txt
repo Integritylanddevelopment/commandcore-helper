@@ -1,0 +1,86 @@
+# agents/finance_bot.py
+
+"""
+Agent Name: finance_bot
+Role: finance
+Version: 1.0.0
+Description: Analyzes budgets, forecasts burn rate, and generates financial summaries.
+"""
+
+import json
+from agents.agent_core import BaseAgent
+from core.scheduler import schedule_task
+from core.messaging import handle_message
+from core.webhooks import register_webhook
+from core.training import register_training_example
+from core.upgrader import inject
+from registry.agent_registry import register_agent
+from utils.finance_tools import run_logic
+
+# Agent Metadata
+agent_name = "finance_bot"
+agent_description = "Analyzes budgets, forecasts burn rate, and generates financial summaries."
+agent_role = "finance"
+agent_version = "1.0.0"
+
+# Input Schema
+expected_input = {
+    "monthly_spend": 12000,
+    "revenue": 4000
+}
+# Output Schema
+output_format = {
+    "burn_rate": 8000,
+    "runway_months": 6
+}
+
+class FinanceBot(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name=agent_name,
+            description=agent_description,
+            role=agent_role,
+            version=agent_version,
+            input_schema=expected_input,
+            output_schema=output_format
+        )
+
+    def run(self, context):
+        try:
+            result = run_logic(context)
+            self.log("Task completed.")
+            return result
+        except Exception as e:
+            self.error(f"Execution failed: {str(e)}")
+            return {"error": str(e)}            
+
+    def auto_schedule(self):
+        schedule_task(agent_name, self.run, day_of_week="fri", hour=7)
+
+    def message_hooks(self, message_data):
+        if "finance" in message_data.get("intent", ""):
+            return self.run(message_data.get("context", {}))
+        return {"status": "ignored"}
+
+    def webhook_handler(self, payload):
+        context = payload.get("finance_context", {})
+        return self.run(context)
+
+    def training_data(self):
+        examples = [
+            {
+                "input": {"monthly_spend": 12000, "revenue": 4000},
+                "output": {"burn_rate": 8000, "runway_months": 6}
+            }
+        ]
+        for example in examples:
+            register_training_example(agent_name, example["input"], example["output"])
+
+# Register
+register_agent(FinanceBot)
+
+# Dev stub
+if __name__ == "__main__":
+    bot = inject(FinanceBot())
+    result = bot.run({"monthly_spend": 12000, "revenue": 4000})
+    print(json.dumps(result, indent=2))

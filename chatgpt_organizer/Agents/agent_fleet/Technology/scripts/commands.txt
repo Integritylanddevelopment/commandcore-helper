@@ -1,0 +1,6 @@
+# CLI commands or API hooks for Developer Bot
+
+1. Initialize development process.
+2. Process input requirements.
+3. Generate code snippets.
+4. Output results in markdown format.

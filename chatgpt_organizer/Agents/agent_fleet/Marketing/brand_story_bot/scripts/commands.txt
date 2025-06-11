@@ -1,0 +1,2 @@
+# commands.txt for Brand Story
+TODO: Define command flow.

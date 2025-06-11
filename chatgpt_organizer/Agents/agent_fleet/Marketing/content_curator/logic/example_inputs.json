@@ -1,0 +1,5 @@
+{
+  "example_input": "Sample prompt or trigger event goes here.",
+  "query": "string",
+  "context": "string"
+}

@@ -1,0 +1,3 @@
+# CLI commands or API hooks for beta_invite_bot
+
+# Define any relevant functions or endpoints.

@@ -1,0 +1,6 @@
+*.png
+*.env
+DumpStack.log
+*.log
+.vscode/
+node_modules/
