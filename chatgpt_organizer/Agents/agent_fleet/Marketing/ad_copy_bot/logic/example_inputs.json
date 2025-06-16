@@ -1,0 +1,19 @@
+{
+  "product_name": "EcoClean",
+  "description": "A revolutionary cleaning solution for eco-conscious households. It removes tough stains while being gentle on the environment.",
+  "target_audience": "environmentally aware consumers",
+  "platform": "Google",
+  "campaign_goal": "Increase brand awareness and drive traffic to the website",
+  "budget": "5000 USD",
+  "duration": "30 days",
+  "ad_request": {
+    "product": "Eco-friendly Water Bottle",
+    "target_audience": "Environmentally conscious individuals",
+    "platform": "Social Media",
+    "key_features": [
+      "Reusable and durable",
+      "Made from recycled materials",
+      "Stylish design"
+    ]
+  }
+}

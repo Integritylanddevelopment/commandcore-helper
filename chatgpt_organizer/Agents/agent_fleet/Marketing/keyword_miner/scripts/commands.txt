@@ -1,0 +1,2 @@
+# commands.txt for Keyword Miner
+TODO: Define command flow.

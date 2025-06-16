@@ -1,0 +1,22 @@
+{
+    "agent_id": "admin_assistant",
+    "version": "1.0",
+    "description": "Streamlines administrative tasks such as scheduling, document management, and communication coordination.",
+    "maintainer": "CommandCore Intelligence Team",
+    "status": "Production Ready",
+    "features": [
+        "Scheduling automation",
+        "Document management",
+        "Communication coordination",
+        "Task prioritization",
+        "Error handling",
+        "Logging for traceability"
+    ],
+    "integration": {
+        "agent_core": "Dynamic upgrades and task execution",
+        "llm": "Continuous learning and adaptation"
+    },
+    "invocation": {
+        "example": "from registry.agent_registry import get_agent\nagent = get_agent('admin_assistant')\nresult = agent.run(context)"
+    }
+}

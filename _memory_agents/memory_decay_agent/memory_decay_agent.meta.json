@@ -1,0 +1,10 @@
+{
+  "name": "decay_agent",
+  "description": "Promotes aged working memory files into short-term and long-term storage.",
+  "inputs": ["days_old (int)"],
+  "outputs": ["summary report (str)"],
+  "entry_point": "memory/memory_agents/decay_agent/decay_agent.py",
+  "function": "run_decay",
+  "category": "memory",
+  "tags": ["aging", "promotion", "summarization", "auto-archive"]
+}

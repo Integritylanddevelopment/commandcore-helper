@@ -1,0 +1,85 @@
+# agents/support_agent.py
+
+"""
+Agent Name: support_agent
+Role: support
+Version: 1.0.0
+Description: Handles user inquiries, tickets, and support triage logic.
+"""
+
+import json
+from agents.agent_core import BaseAgent
+from core.scheduler import schedule_task
+from core.messaging import handle_message
+from core.webhooks import register_webhook
+from core.training import register_training_example
+from core.upgrader import inject
+from registry.agent_registry import register_agent
+from utils.support_logic import run_logic
+
+# Agent Metadata
+agent_name = "support_agent"
+agent_description = "Handles user inquiries, tickets, and support triage logic."
+agent_role = "support"
+agent_version = "1.0.0"
+
+# Input Schema
+expected_input = {
+    "ticket": "App crashes when uploading a photo"
+}
+# Output Schema
+output_format = {
+    "category": "Bug report",
+    "status": "Escalated to QA"
+}
+
+class SupportAgent(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name=agent_name,
+            description=agent_description,
+            role=agent_role,
+            version=agent_version,
+            input_schema=expected_input,
+            output_schema=output_format
+        )
+
+    def run(self, context):
+        try:
+            result = run_logic(context)
+            self.log("Task completed.")
+            return result
+        except Exception as e:
+            self.error(f"Execution failed: {str(e)}")
+            return {"error": str(e)}            
+
+    def auto_schedule(self):
+        schedule_task(agent_name, self.run, day_of_week="fri", hour=7)
+
+    def message_hooks(self, message_data):
+        if "support" in message_data.get("intent", ""):
+            return self.run(message_data.get("context", {}))
+        return {"status": "ignored"}
+
+    def webhook_handler(self, payload):
+        context = payload.get("support_context", {})
+        return self.run(context)
+
+    def training_data(self):
+        examples = [
+            {
+                "input": {"ticket": "App crashes when uploading a photo"},
+                "output": {"category": "Bug report", "status": "Escalated to QA"}
+            }
+        ]
+        for example in examples:
+            register_training_example(agent_name, example["input"], example["output"])
+
+# Register
+register_agent(SupportAgent)
+
+# Dev stub
+if __name__ == "__main__":
+    bot = inject(SupportAgent())
+    result = bot.run({"ticket": "App crashes when uploading a photo"})
+    print(json.dumps(result, indent=2))

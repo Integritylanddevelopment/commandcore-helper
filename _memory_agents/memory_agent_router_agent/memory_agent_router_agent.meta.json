@@ -1,0 +1,10 @@
+{
+  "name": "memory_agent_router_agent",
+  "description": "Handles routing of queries to appropriate memory agents based on keywords.",
+  "inputs": ["query (str)"],
+  "outputs": ["agent response (str)"],
+  "entry_point": "memory/memory_agents/memory_agent_router_agent/memory_agent_router_agent.py",
+  "function": "route",
+  "category": "router",
+  "tags": ["routing", "memory agents", "query handling"]
+}

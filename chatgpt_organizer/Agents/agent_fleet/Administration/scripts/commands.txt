@@ -1,0 +1,23 @@
+# commands.txt for Admin Assistant
+
+## Command Flow
+
+1. **Initialize Bot**
+   - Command: `initialize_admin_assistant`
+   - Description: Sets up the bot and prepares it for task execution.
+
+2. **Schedule Meeting**
+   - Command: `schedule_meeting`
+   - Description: Automates the scheduling of meetings with participants.
+
+3. **Organize Documents**
+   - Command: `organize_documents`
+   - Description: Organizes specified documents into folders.
+
+4. **Coordinate Communication**
+   - Command: `coordinate_communication`
+   - Description: Manages email threads and team communication.
+
+5. **Prioritize Tasks**
+   - Command: `prioritize_tasks`
+   - Description: Identifies and prioritizes high-importance tasks.

@@ -1,0 +1,77 @@
+# Ignore large/binary files
+*.zip
+*.exe
+*.msi
+*.mp4
+*.mov
+*.iso
+
+# Ignore logs and crash dumps
+*.log
+*.tmp
+*.bak
+*.swp
+*.dmp
+
+# Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code workspace settings
+.vscode/
+*.code-workspace
+.devcontainer
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Backup files
+*.old
+*.backup
+*.orig
+
+# Node/npm (if used)
+node_modules/
+npm-debug.log*
+# Git LFS artifacts
+*.lfs
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.devcontainer
+.pytest_cache/
+
+# Custom folders to ignore (add if needed)
+/dist/
+/build/
+.Python

@@ -1,0 +1,2 @@
+# commands.txt for Note Taker
+TODO: Define command flow.

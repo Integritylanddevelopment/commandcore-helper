@@ -1,0 +1,10 @@
+{
+  "name": "memory_agent_registry_agent",
+  "description": "Scans the memory/_memory_agents folder and updates the memory_agent_registry.json file.",
+  "inputs": [],
+  "outputs": ["memory_agent_registry.json"],
+  "entry_point": "memory/_memory_agents/memory_agents_registry/memory_agent_registry_agent.py",
+  "function": "update_registry",
+  "category": "registry management",
+  "tags": ["registry", "memory agents", "automation"]
+}

@@ -1,0 +1,22 @@
+{
+    "agent_id": "api_doc_bot",
+    "version": "1.0",
+    "description": "Generates comprehensive API documentation from endpoint specifications and code.",
+    "maintainer": "CommandCore Intelligence Team",
+    "status": "Production Ready",
+    "features": [
+        "Endpoint specification parsing",
+        "Code annotation extraction",
+        "Documentation formatting",
+        "Integration with Agent Core",
+        "Error handling",
+        "Logging for traceability"
+    ],
+    "integration": {
+        "agent_core": "Dynamic upgrades and task execution",
+        "llm": "Continuous learning and adaptation"
+    },
+    "invocation": {
+        "example": "from registry.agent_registry import get_agent\nagent = get_agent('api_doc_bot')\nresult = agent.run(context)"
+    }
+}

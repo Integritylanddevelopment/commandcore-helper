@@ -1,0 +1,27 @@
+{
+  "memory_agent_registry_agent": {
+    "path": "memory_agent_registry_agent.py",
+    "meta": "memory_agent_registry_agent.meta.json",
+    "description": "Scans the memory/_memory_agents folder and updates the memory_agent_registry.json file."
+  },
+  "memory_agent_router_agent": {
+    "path": "../memory_agent_router_agent/memory_agent_router_agent.py",
+    "meta": "../memory_agent_router_agent/memory_agent_router_agent.meta.json",
+    "description": "Handles routing of queries to appropriate memory agents based on keywords."
+  },
+  "memory_decay_agent": {
+    "path": "../memory_decay_agent/memory_decay_agent.py",
+    "meta": "../memory_decay_agent/memory_decay_agent.meta.json",
+    "description": "Promotes aged working memory files into short-term and long-term storage."
+  },
+  "memory_recall_agent": {
+    "path": "../memory_recall_agent/memory_recall_agent.py",
+    "meta": "../memory_recall_agent/memory_recall_agent.meta.json",
+    "description": "Searches short-term index \u2192 filters summaries \u2192 fetches long-term memory files."
+  },
+  "memory_summarize_agent": {
+    "path": "../memory_summarize_agent/memory_summarize_agent.py",
+    "meta": "../memory_summarize_agent/memory_summarize_agent.meta.json",
+    "description": "Summarizes memory logs or indexed content using GPT into markdown bullet points."
+  }
+}

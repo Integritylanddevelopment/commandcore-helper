@@ -1,0 +1,108 @@
+{
+  "name": "ad_copy_bot",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ad-copy"
+      },
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        250,
+        300
+      ],
+      "webhookId": "random-generated-id-1"
+    },
+    {
+      "parameters": {
+        "functionCode": "return [{\n    json: {\n        headline: `Discover ${$json.product_name} \u2014 Perfect for ${$json.target_audience}!`,\n        body: `${$json.description} Try ${$json.product_name} today and see the difference.`,\n        cta: $json.platform.toLowerCase() === 'google' ? 'Learn More' : 'Shop Now',\n        platform: $json.platform,\n        audience: $json.target_audience\n    }\n}];"
+      },
+      "name": "Draft Copy",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a world-class ad copywriter optimizing marketing content for specific platforms and audiences."
+          },
+          {
+            "role": "user",
+            "content": "Polish this ad copy for {{ $json.platform }}, targeting {{ $json.audience }}:\nHeadline: {{ $json.headline }}\nBody: {{ $json.body }}\nCTA: {{ $json.cta }}\n\nReturn only the improved:\nHeadline: ...\nBody: ...\nCTA: ..."
+          }
+        ]
+      },
+      "name": "Polish with GPT",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [
+        750,
+        300
+      ],
+      "credentials": {
+        "openAIApi": {
+          "id": "openai-placeholder",
+          "name": "OpenAI Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "responseMode": "lastNode",
+        "responseData": "firstEntryJson"
+      },
+      "name": "Return Copy",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Draft Copy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Draft Copy": {
+      "main": [
+        [
+          {
+            "node": "Polish with GPT",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Polish with GPT": {
+      "main": [
+        [
+          {
+            "node": "Return Copy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false
+}

@@ -1,0 +1,10 @@
+{
+  "example": "TODO: Add output_template",
+  "optimization_strategies": [
+    {
+      "title": "string",
+      "description": "string",
+      "impact": "string"
+    }
+  ]
+}

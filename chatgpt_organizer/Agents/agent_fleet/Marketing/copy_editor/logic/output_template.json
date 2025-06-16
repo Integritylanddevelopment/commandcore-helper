@@ -1,0 +1,10 @@
+{
+  "edited_text": "string",
+  "issues_fixed": [
+    {
+      "issue_id": "string",
+      "description": "string",
+      "severity": "string"
+    }
+  ]
+}

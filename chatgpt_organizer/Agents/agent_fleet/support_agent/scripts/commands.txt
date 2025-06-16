@@ -1,0 +1,2 @@
+# commands.txt for Support Agent
+TODO: Define command flow.

@@ -1,0 +1,2 @@
+# commands.txt for Culture Writer
+TODO: Define command flow.

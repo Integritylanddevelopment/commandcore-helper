@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>File Upload to Firebase</title>
+</head>
+<body>
+  <h1>Upload a File to Firebase Storage</h1>
+
+  <input type="file" id="fileInput" />
+  <button onclick="uploadFile()">Upload</button>
+
+  <pre id="status"></pre>
+
+  <script>
+    async function uploadFile() {
+      const fileInput = document.getElementById('fileInput');
+      const status = document.getElementById('status');
+
+      if (!fileInput.files.length) {
+        status.textContent = 'Please select a file.';
+        return;
+      }
+
+      const file = fileInput.files[0];
+      const formData = new FormData();
+      formData.append('file', file);
+
+      status.textContent = 'Uploading...';
+
+      try {
+        const res = await fetch('https://us-central1-couplestherapyapp-a3fc9.cloudfunctions.net/api/upload', {
+          method: 'POST',
+          body: formData
+        });
+
+        const raw = await res.text();
+        status.textContent = `Status: ${res.status}\n\nResponse:\n${raw}`;
+      } catch (err) {
+        status.textContent = '❌ Upload error: ' + err.message;
+      }
+    }
+  </script>
+</body>
+</html>

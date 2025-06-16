@@ -1,0 +1,6 @@
+# commands.txt for Compliance Checker
+
+1. Initialize compliance scan.
+2. Process input data.
+3. Generate compliance report.
+4. Output results in JSON format.

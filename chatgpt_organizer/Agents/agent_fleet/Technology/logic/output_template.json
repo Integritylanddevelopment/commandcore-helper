@@ -1,0 +1,10 @@
+{
+  "expected_output": "Sample response or structured output schema.",
+  "code_snippets": [
+    {
+      "language": "string",
+      "snippet": "string",
+      "description": "string"
+    }
+  ]
+}

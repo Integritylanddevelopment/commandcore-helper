@@ -1,0 +1,10 @@
+{
+  "name": "summarize_agent",
+  "description": "Summarizes memory logs or indexed content using GPT into markdown bullet points.",
+  "inputs": ["filepath (str)"],
+  "outputs": ["markdown summary (str)"],
+  "entry_point": "memory/agents/summarize_agent.py",
+  "function": "summarize",
+  "category": "memory",
+  "tags": ["summarization", "memory compression", "gpt"]
+}

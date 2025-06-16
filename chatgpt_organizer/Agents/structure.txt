@@ -1,0 +1,1612 @@
+Folder PATH listing for volume DATA
+Volume serial number is F44A-3680
+D:\ACTIVEPROJECTS\COMMANDCORE-OS\CHATGPT_ORGANIZER\AGENTS
+¦   AGENT SCHEMA.md
+¦   agent_registry.py
+¦   Bot description.md
+¦   registry_status.md
+¦   structure.txt
+¦   
++---administration
++---agent_core
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---agent_test
+¦   ¦   +---docs
+¦   ¦   ¦       README.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       test_agent.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           status.md
+¦   ¦           
+¦   +---ai_trainer
+¦   ¦   +---docs
+¦   ¦   ¦       README.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       trainer.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           status.md
+¦   ¦           
+¦   +---core_logic
+¦   ¦   +---docs
+¦   ¦   ¦       README.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦   ¦   agent_core.py
+¦   ¦   ¦   ¦   agent_utils.py
+¦   ¦   ¦   ¦   example_inputs.json
+¦   ¦   ¦   ¦   output_template.json
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---__pycache__
+¦   ¦   ¦           agent_core.cpython-312.pyc
+¦   ¦   ¦           agent_utils.cpython-312.pyc
+¦   ¦   ¦           
+¦   ¦   +---status
+¦   ¦           status.md
+¦   ¦           
+¦   +---docs
+¦   ¦   ¦   docs.zip
+¦   ¦   ¦   
+¦   ¦   +---agents_README
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       agents_README.md
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---templates_example
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       templates_example.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       templates_example.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---__init__
+¦   ¦       +---docs
+¦   ¦       ¦       overview.md
+¦   ¦       ¦       role.md
+¦   ¦       ¦       
+¦   ¦       +---logic
+¦   ¦       ¦       example_inputs.json
+¦   ¦       ¦       output_template.json
+¦   ¦       ¦       prompt.py
+¦   ¦       ¦       __init__.py
+¦   ¦       ¦       
+¦   ¦       +---metadata
+¦   ¦       ¦       tags.json
+¦   ¦       ¦       
+¦   ¦       +---scripts
+¦   ¦       ¦       commands.txt
+¦   ¦       ¦       
+¦   ¦       +---status
+¦   ¦               readiness.md
+¦   ¦               
+¦   +---llm_trainer_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       test.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---upgrader
+¦   ¦   +---docs
+¦   ¦   ¦       README.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       injector.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           status.md
+¦   ¦           
+¦   +---__pycache__
+¦           __init__.cpython-312.pyc
+¦           
++---agent_fleet
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---Administration
+¦   ¦   ¦   config.json
+¦   ¦   ¦   
+¦   ¦   +---admin_assistant
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       logic.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       admin_assistant_upgraded.txt
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           status.md
+¦   ¦   ¦           
+¦   ¦   +---analytics_bot
+¦   ¦   ¦   ¦   config.json
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       analytics_bot.py
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       analytics_bot_upgraded.txt
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---assistant_sync
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       assistant_sync.py
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       test_assistant_sync.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---compliance_checker
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       compliance_checker.py
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       compliance_checker_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---deployment_planner
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       deployment_planner.py
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---finance_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       finance_bot.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       finance_bot_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---funding_advisor
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       funding_advisor.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---hr_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       hr_bot.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       hr_bot_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---inbox_responder
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       inbox_responder.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       inbox_responder_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---journey_mapper
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       journey_mapper.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       journey_mapper_upgraded.txt
+¦   ¦   ¦   ¦       test.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---legal_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       legal_bot.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       legal_bot_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---logic
+¦   ¦   ¦       admin_assistant.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---note_taker
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       note_taker.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       note_taker_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---ops_planner
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       ops_planner.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---scripts
+¦   ¦   ¦       admin_assistant_upgraded.txt
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦   ¦       readiness.md
+¦   ¦   ¦       
+¦   ¦   +---summarizer
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       summarizer.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       summarizer_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---ui_evaluator
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       ui_evaluator.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       ui_evaluator_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---ux_writer
+¦   ¦       +---docs
+¦   ¦       ¦       overview.md
+¦   ¦       ¦       role.md
+¦   ¦       ¦       
+¦   ¦       +---logic
+¦   ¦       ¦   ¦   example_inputs.json
+¦   ¦       ¦   ¦   output_template.json
+¦   ¦       ¦   ¦   prompt.py
+¦   ¦       ¦   ¦   ux_writer.py
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   +---__pycache__
+¦   ¦       ¦           ux_writer.cpython-312.pyc
+¦   ¦       ¦           
+¦   ¦       +---metadata
+¦   ¦       ¦       tags.json
+¦   ¦       ¦       
+¦   ¦       +---scripts
+¦   ¦       ¦       commands.txt
+¦   ¦       ¦       
+¦   ¦       +---status
+¦   ¦               readiness.md
+¦   ¦               
+¦   +---api_doc_bot
+¦   ¦   ¦   config.json
+¦   ¦   ¦   
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       api_doc_bot.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       api_doc_bot_upgraded.txt
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---assistant_link
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       assistant_link.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---beta_invite_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       beta_invite_bot.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       test.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---brand_story_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       brand_story_bot.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---bug_reporter
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       bug_reporter.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       bug_reporter_upgraded.txt
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---content_curator
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       content_curator.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       content_curator_upgraded.txt
+¦   ¦   ¦       test.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---copy_editor
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       copy_editor.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       copy_editor_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---culture_writer
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       culture_writer.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---ecommerce_advisor
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       ecommerce_advisor.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---email_split_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       email_split_bot.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       email_split_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---eng_feedback_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       eng_feedback_bot.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       eng_feedback_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---feature_spec_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦   ¦   example_inputs.json
+¦   ¦   ¦   ¦   feature_spec_bot.py
+¦   ¦   ¦   ¦   output_template.json
+¦   ¦   ¦   ¦   prompt.py
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---__pycache__
+¦   ¦   ¦           feature_spec_bot.cpython-312.pyc
+¦   ¦   ¦           
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       feature_spec_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---funnel_debugger
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       funnel_debugger.py
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       funnel_debugger_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---infra_monitor
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       infra_monitor.py
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---launch_planner
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦   ¦   example_inputs.json
+¦   ¦   ¦   ¦   launch_planner.py
+¦   ¦   ¦   ¦   output_template.json
+¦   ¦   ¦   ¦   prompt.py
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---__pycache__
+¦   ¦   ¦           launch_planner.cpython-312.pyc
+¦   ¦   ¦           
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       launch_planner_upgraded.txt
+¦   ¦   ¦       test.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---Marketing
+¦   ¦   +---ad_copy_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       logic.md
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       README.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦   ¦   ad_copy_bot.json
+¦   ¦   ¦   ¦   ¦   ad_copy_bot.py
+¦   ¦   ¦   ¦   ¦   example_inputs.json
+¦   ¦   ¦   ¦   ¦   output_template.json
+¦   ¦   ¦   ¦   ¦   prompt.py
+¦   ¦   ¦   ¦   ¦   __init__.py
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---__pycache__
+¦   ¦   ¦   ¦           __init__.cpython-312.pyc
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       ad_copy_bot_upgraded.txt
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           status.md
+¦   ¦   ¦           
+¦   ¦   +---branding_coach
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       branding_coach.py
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       branding_coach_upgraded.txt
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       test.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---influencer_outreach
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       influencer_outreach.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       influencer_outreach_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---keyword_miner
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       keyword_miner.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       keyword_miner_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---localization_agent
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       localization_agent.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       localization_agent_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       marketing_bot.py
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---newsletter_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       newsletter_bot.py
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       newsletter_bot_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---pitch_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       pitch_bot.py
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       pitch_bot_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       marketing_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---onboarding_coach
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       onboarding_coach.py
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       test.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---peer_feedback_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       peer_feedback_bot.py
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       peer_feedback_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---persona_builder
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       persona_builder.py
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       persona_builder_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---product_faq_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       product_faq_bot.py
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       product_faq_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---pulse_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       pulse_bot.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       pulse_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---recruiter_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       recruiter_bot.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---roadmap_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦   ¦   example_inputs.json
+¦   ¦   ¦   ¦   output_template.json
+¦   ¦   ¦   ¦   prompt.py
+¦   ¦   ¦   ¦   roadmap_bot.py
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---__pycache__
+¦   ¦   ¦           roadmap_bot.cpython-312.pyc
+¦   ¦   ¦           
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       roadmap_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---Sales
+¦   ¦   +---client_success_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       client_success_bot.py
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       client_success_bot_upgraded.txt
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       test.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       retention_bot.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       retention_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---seo_optimizer
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       seo_optimizer.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       seo_optimizer_upgraded.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---social_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       social_bot.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       social_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---support_agent
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       support_agent.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       support_agent_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---team_meeting_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       team_meeting_bot.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       team_meeting_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---Technology
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       developer_bot.py
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---qa_bot
+¦   ¦   ¦   +---docs
+¦   ¦   ¦   ¦       overview.md
+¦   ¦   ¦   ¦       role.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---logic
+¦   ¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦   ¦       output_template.json
+¦   ¦   ¦   ¦       prompt.py
+¦   ¦   ¦   ¦       qa_bot.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---metadata
+¦   ¦   ¦   ¦       tags.json
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       commands.txt
+¦   ¦   ¦   ¦       qa_bot_upgraded.txt
+¦   ¦   ¦   ¦       test.py
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---status
+¦   ¦   ¦           readiness.md
+¦   ¦   ¦           
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       developer_bot_upgraded.txt
+¦   ¦   ¦       test.py
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦   ¦       readiness.md
+¦   ¦   ¦       
+¦   ¦   +---tech_writer
+¦   ¦       +---docs
+¦   ¦       ¦       overview.md
+¦   ¦       ¦       role.md
+¦   ¦       ¦       
+¦   ¦       +---logic
+¦   ¦       ¦       example_inputs.json
+¦   ¦       ¦       output_template.json
+¦   ¦       ¦       prompt.py
+¦   ¦       ¦       tech_writer.py
+¦   ¦       ¦       
+¦   ¦       +---metadata
+¦   ¦       ¦       tags.json
+¦   ¦       ¦       
+¦   ¦       +---scripts
+¦   ¦       ¦       commands.txt
+¦   ¦       ¦       test.py
+¦   ¦       ¦       
+¦   ¦       +---status
+¦   ¦               readiness.md
+¦   ¦               
+¦   +---ticket_router
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       ticket_router.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       ticket_router_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---value_prop_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦   ¦   example_inputs.json
+¦   ¦   ¦   ¦   output_template.json
+¦   ¦   ¦   ¦   prompt.py
+¦   ¦   ¦   ¦   value_prop_bot.py
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---__pycache__
+¦   ¦   ¦           value_prop_bot.cpython-312.pyc
+¦   ¦   ¦           
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       value_prop_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---voice_consistency_bot
+¦   ¦   +---docs
+¦   ¦   ¦       overview.md
+¦   ¦   ¦       role.md
+¦   ¦   ¦       
+¦   ¦   +---logic
+¦   ¦   ¦       example_inputs.json
+¦   ¦   ¦       output_template.json
+¦   ¦   ¦       prompt.py
+¦   ¦   ¦       voice_consistency_bot.py
+¦   ¦   ¦       
+¦   ¦   +---metadata
+¦   ¦   ¦       tags.json
+¦   ¦   ¦       
+¦   ¦   +---scripts
+¦   ¦   ¦       commands.txt
+¦   ¦   ¦       voice_consistency_bot_upgraded.txt
+¦   ¦   ¦       
+¦   ¦   +---status
+¦   ¦           readiness.md
+¦   ¦           
+¦   +---__pycache__
+¦           __init__.cpython-312.pyc
+¦           
++---marketing
++---sales
++---support
++---technology
++---Z_leftovers
+¦   ¦   .gitignore
+¦   ¦   ad_copy_bot_workflow.json
+¦   ¦   ad_copy_bot_working_n8n.json
+¦   ¦   ccos__admin_assistant_upgraded_with_upgrader.txt
+¦   ¦   ccos__ad_copy_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__agents_readme.txt
+¦   ¦   ccos__agents_README_md.txt
+¦   ¦   ccos__agent_index.txt
+¦   ¦   ccos__agent_test.txt
+¦   ¦   ccos__AI agents .pdf
+¦   ¦   ccos__analytics_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__api_doc_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__branding_coach_upgraded_with_upgrader.txt
+¦   ¦   ccos__bug_reporter_upgraded_with_upgrader.txt
+¦   ¦   ccos__client_success_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__CommandCoreOS_AgentFleet.zip
+¦   ¦   ccos__compliance_checker_upgraded_with_upgrader.txt
+¦   ¦   ccos__content_curator_upgraded_with_upgrader.txt
+¦   ¦   ccos__copy_editor_upgraded_with_upgrader.txt
+¦   ¦   ccos__developer_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__email_split_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__eng_feedback_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__feature_spec_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__finance_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__funnel_debugger_upgraded_with_upgrader.txt
+¦   ¦   ccos__hr_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__inbox_responder_upgraded_with_upgrader.txt
+¦   ¦   ccos__influencer_outreach_upgraded_with_upgrader.txt
+¦   ¦   ccos__init_py.txt
+¦   ¦   ccos__journey_mapper_upgraded_with_upgrader.txt
+¦   ¦   ccos__keyword_miner_upgraded_with_upgrader.txt
+¦   ¦   ccos__launch_planner_upgraded_with_upgrader.txt
+¦   ¦   ccos__legal_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__localization_agent_upgraded_with_upgrader.txt
+¦   ¦   ccos__marketing_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__newsletter_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__note_taker_upgraded_with_upgrader.txt
+¦   ¦   ccos__peer_feedback_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__persona_builder_upgraded_with_upgrader.txt
+¦   ¦   ccos__pitch_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__product_faq_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__pulse_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__qa_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__retention_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__roadmap_bot_complete.txt
+¦   ¦   ccos__roadmap_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__seo_optimizer_upgraded_with_upgrader.txt
+¦   ¦   ccos__social_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__summarizer_upgraded_with_upgrader.txt
+¦   ¦   ccos__support_agent_upgraded_with_upgrader.txt
+¦   ¦   ccos__team_meeting_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__templates_example.txt
+¦   ¦   ccos__ticket_router_upgraded_with_upgrader.txt
+¦   ¦   ccos__ui_evaluator_upgraded_with_upgrader.txt
+¦   ¦   ccos__value_prop_bot_upgraded_with_upgrader.txt
+¦   ¦   ccos__voice_consistency_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__admin_assistant_upgraded_with_upgrader.txt
+¦   ¦   extra__ad_copy_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__agent_index.txt
+¦   ¦   extra__agent_test.txt
+¦   ¦   extra__analytics_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__api_doc_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__branding_coach_upgraded_with_upgrader.txt
+¦   ¦   extra__bug_reporter_upgraded_with_upgrader.txt
+¦   ¦   extra__client_success_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__compliance_checker_upgraded_with_upgrader.txt
+¦   ¦   extra__content_curator_upgraded_with_upgrader.txt
+¦   ¦   extra__copy_editor_upgraded_with_upgrader.txt
+¦   ¦   extra__developer_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__email_split_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__eng_feedback_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__feature_spec_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__finance_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__funnel_debugger_upgraded_with_upgrader.txt
+¦   ¦   extra__hr_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__inbox_responder_upgraded_with_upgrader.txt
+¦   ¦   extra__influencer_outreach_upgraded_with_upgrader.txt
+¦   ¦   extra__init_py.txt
+¦   ¦   extra__journey_mapper_upgraded_with_upgrader.txt
+¦   ¦   extra__keyword_miner_upgraded_with_upgrader.txt
+¦   ¦   extra__launch_planner_upgraded_with_upgrader.txt
+¦   ¦   extra__legal_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__localization_agent_upgraded_with_upgrader.txt
+¦   ¦   extra__marketing_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__newsletter_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__note_taker_upgraded_with_upgrader.txt
+¦   ¦   extra__peer_feedback_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__persona_builder_upgraded_with_upgrader.txt
+¦   ¦   extra__pitch_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__product_faq_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__pulse_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__qa_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__retention_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__roadmap_bot_complete.txt
+¦   ¦   extra__roadmap_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__seo_optimizer_upgraded_with_upgrader.txt
+¦   ¦   extra__social_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__summarizer_upgraded_with_upgrader.txt
+¦   ¦   extra__support_agent_upgraded_with_upgrader.txt
+¦   ¦   extra__team_meeting_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__templates_example.txt
+¦   ¦   extra__ticket_router_upgraded_with_upgrader.txt
+¦   ¦   extra__ui_evaluator_upgraded_with_upgrader.txt
+¦   ¦   extra__value_prop_bot_upgraded_with_upgrader.txt
+¦   ¦   extra__voice_consistency_bot_upgraded_with_upgrader.txt
+¦   ¦   fleet__README.md
+¦   ¦   
+¦   +---extra agents
+¦   ¦       admin_assistant_upgraded_with_upgrader.txt
+¦   ¦       ad_copy_bot_upgraded.txt
+¦   ¦       ad_copy_bot_upgraded_with_upgrader.txt
+¦   ¦       agents_README.md
+¦   ¦       agent_index.json
+¦   ¦       agent_index.txt
+¦   ¦       agent_test.py
+¦   ¦       agent_test.txt
+¦   ¦       analytics_bot_upgraded_with_upgrader.txt
+¦   ¦       api_doc_bot_upgraded_with_upgrader.txt
+¦   ¦       assistant_link.py
+¦   ¦       assistant_sync.py
+¦   ¦       branding_coach_upgraded_with_upgrader.txt
+¦   ¦       bug_reporter_upgraded_with_upgrader.txt
+¦   ¦       client_success_bot_upgraded_with_upgrader.txt
+¦   ¦       compliance_checker_upgraded_with_upgrader.txt
+¦   ¦       content_curator_upgraded_with_upgrader.txt
+¦   ¦       copy_editor_upgraded_with_upgrader.txt
+¦   ¦       developer_bot_upgraded_with_upgrader.txt
+¦   ¦       email_split_bot_upgraded_with_upgrader.txt
+¦   ¦       eng_feedback_bot_upgraded_with_upgrader.txt
+¦   ¦       feature_spec_bot_upgraded_with_upgrader.txt
+¦   ¦       finance_bot_upgraded_with_upgrader.txt
+¦   ¦       funnel_debugger_upgraded_with_upgrader.txt
+¦   ¦       hr_bot_upgraded_with_upgrader.txt
+¦   ¦       inbox_responder_upgraded_with_upgrader.txt
+¦   ¦       influencer_outreach_upgraded_with_upgrader.txt
+¦   ¦       init_py.txt
+¦   ¦       journey_mapper_upgraded_with_upgrader.txt
+¦   ¦       keyword_miner_upgraded_with_upgrader.txt
+¦   ¦       launch_planner_upgraded_with_upgrader.txt
+¦   ¦       legal_bot_upgraded_with_upgrader.txt
+¦   ¦       localization_agent_upgraded_with_upgrader.txt
+¦   ¦       marketing_bot_upgraded_with_upgrader.txt
+¦   ¦       newsletter_bot_upgraded_with_upgrader.txt
+¦   ¦       note_taker_upgraded_with_upgrader.txt
+¦   ¦       peer_feedback_bot_upgraded_with_upgrader.txt
+¦   ¦       persona_builder_upgraded_with_upgrader.txt
+¦   ¦       pitch_bot_upgraded_with_upgrader.txt
+¦   ¦       product_faq_bot_upgraded_with_upgrader.txt
+¦   ¦       pulse_bot_upgraded_with_upgrader.txt
+¦   ¦       qa_bot_upgraded_with_upgrader.txt
+¦   ¦       retention_bot_upgraded_with_upgrader.txt
+¦   ¦       roadmap_bot_complete.txt
+¦   ¦       roadmap_bot_upgraded_with_upgrader.txt
+¦   ¦       seo_optimizer_upgraded_with_upgrader.txt
+¦   ¦       social_bot_upgraded_with_upgrader.txt
+¦   ¦       summarizer_upgraded_with_upgrader.txt
+¦   ¦       support_agent_upgraded_with_upgrader.txt
+¦   ¦       team_meeting_bot_upgraded_with_upgrader.txt
+¦   ¦       templates_example.json
+¦   ¦       templates_example.txt
+¦   ¦       ticket_router_upgraded_with_upgrader.txt
+¦   ¦       ui_evaluator_upgraded_with_upgrader.txt
+¦   ¦       upgrader.py
+¦   ¦       value_prop_bot_upgraded_with_upgrader.txt
+¦   ¦       voice_consistency_bot_upgraded_with_upgrader.txt
+¦   ¦       __init__.py
+¦   ¦       
+¦   +---init_py
+¦       +---docs
+¦       ¦       overview.md
+¦       ¦       role.md
+¦       ¦       
+¦       +---logic
+¦       ¦       example_inputs.json
+¦       ¦       init_py.py
+¦       ¦       output_template.json
+¦       ¦       prompt.py
+¦       ¦       
+¦       +---metadata
+¦       ¦       tags.json
+¦       ¦       
+¦       +---scripts
+¦       ¦       commands.txt
+¦       ¦       
+¦       +---status
+¦               readiness.md
+¦               
++---__pycache__
+        agent_registry.cpython-312.pyc
+        

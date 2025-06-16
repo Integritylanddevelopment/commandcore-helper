@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "instanceId": "9ce3ec1b-0d1a-45c2-8ce4-fc4ddf4f2899"
+  },
+  "nodes": [
+    {
+      "id": "f708ed5b-6889-489e-a680-17af0067cae9",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ad-copy",
+        "responseMode": "onReceived",
+        "responseData": "allEntries"
+      },
+      "webhookId": "c6fe8c76-b04f-46f1-b71c-be5f141b3ad4"
+    },
+    {
+      "id": "3c699d8f-24c5-4298-a9a3-bf78ed5cd454",
+      "name": "Draft Copy",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        500,
+        300
+      ],
+      "parameters": {
+        "functionCode": "return [{\n    json: {\n        headline: `Discover ${$json.product_name} \u2014 Perfect for ${$json.target_audience}!`,\n        body: `${$json.description} Try ${$json.product_name} today and see the difference.`,\n        cta: $json.platform.toLowerCase() === 'google' ? 'Learn More' : 'Shop Now',\n        platform: $json.platform,\n        audience: $json.target_audience\n    }\n}];"
+      }
+    },
+    {
+      "id": "784d1429-3a82-4721-aeea-4b034a312158",
+      "name": "Polish with GPT",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [
+        750,
+        300
+      ],
+      "parameters": {
+        "model": "gpt-4",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a world-class ad copywriter optimizing marketing content for specific platforms and audiences."
+          },
+          {
+            "role": "user",
+            "content": "Polish this ad copy for {{ $json.platform }}, targeting {{ $json.audience }}:\nHeadline: {{ $json.headline }}\nBody: {{ $json.body }}\nCTA: {{ $json.cta }}\n\nReturn only the improved:\nHeadline: ...\nBody: ...\nCTA: ..."
+          }
+        ]
+      },
+      "credentials": {
+        "openAIApi": {
+          "id": "openai-placeholder",
+          "name": "OpenAI Account"
+        }
+      }
+    },
+    {
+      "id": "7124cd16-5b8e-48c4-a85c-8e87621edd5d",
+      "name": "Return Copy",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        300
+      ],
+      "parameters": {
+        "responseMode": "lastNode",
+        "responseData": "firstEntryJson"
+      }
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Draft Copy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Draft Copy": {
+      "main": [
+        [
+          {
+            "node": "Polish with GPT",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Polish with GPT": {
+      "main": [
+        [
+          {
+            "node": "Return Copy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": [],
+  "id": "6e9ecb81-1d52-419d-a890-5359071ea50d",
+  "name": "ad_copy_bot"
+}

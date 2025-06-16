@@ -1,0 +1,6 @@
+# commands.txt for Copy Editor
+
+1. Initialize editing process.
+2. Process input text.
+3. Generate polished output.
+4. Output results in markdown format.

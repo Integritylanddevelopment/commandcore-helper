@@ -1,0 +1,2 @@
+# commands.txt for Ecommerce Advisor
+TODO: Define command flow.

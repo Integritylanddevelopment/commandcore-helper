@@ -1,0 +1,2 @@
+# commands.txt for Localization Agent
+TODO: Define command flow.

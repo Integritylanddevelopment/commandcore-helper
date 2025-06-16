@@ -1,0 +1,6 @@
+{
+  "example": {
+    "email_content": "string",
+    "context": "string"
+  }
+}

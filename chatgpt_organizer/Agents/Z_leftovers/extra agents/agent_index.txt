@@ -1,0 +1,27 @@
+[
+  {
+    "name": "roadmap_bot",
+    "role": "planner",
+    "description": "Generates project roadmaps based on goals, constraints, and timeline."
+  },
+  {
+    "name": "ad_copy_bot",
+    "role": "marketing",
+    "description": "Writes high-conversion ad copy for campaigns."
+  },
+  {
+    "name": "admin_assistant",
+    "role": "admin",
+    "description": "Handles scheduling, reminders, and internal support."
+  },
+  {
+    "name": "developer_bot",
+    "role": "engineering",
+    "description": "Generates and improves code based on developer tasks."
+  },
+  {
+    "name": "qa_bot",
+    "role": "qa",
+    "description": "Generates test cases from feature descriptions and bug reports."
+  }
+]

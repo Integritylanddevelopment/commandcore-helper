@@ -1,0 +1,10 @@
+{
+  "compliance_status": "string",
+  "issues": [
+    {
+      "issue_id": "string",
+      "description": "string",
+      "severity": "string"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# commands.txt for Deployment Planner
+
+1. Initialize deployment planning.
+2. Process input data.
+3. Generate deployment strategies.
+4. Output results in markdown format.

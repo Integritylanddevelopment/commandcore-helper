@@ -1,0 +1,6 @@
+# commands.txt for Culture Writer
+
+1. Initialize content creation.
+2. Process input data.
+3. Generate cultural insights.
+4. Output results in markdown format.

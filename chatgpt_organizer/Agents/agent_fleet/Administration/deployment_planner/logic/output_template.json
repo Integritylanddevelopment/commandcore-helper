@@ -1,0 +1,10 @@
+{
+  "example": "TODO: Add output_template",
+  "deployment_plan": [
+    {
+      "phase": "string",
+      "tasks": ["string"],
+      "rollback": "string"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "example": "TODO: Add output_template",
+  "templates": {
+    "schedule_meeting": {
+      "confirmation": "Meeting scheduled successfully",
+      "details": {
+        "participants": ["Participant1", "Participant2"],
+        "date": "YYYY-MM-DD",
+        "time": "HH:MM AM/PM",
+        "location": "Location",
+        "agenda": "Agenda details"
+      }
+    },
+    "organize_documents": {
+      "confirmation": "Documents organized successfully",
+      "folder": "Folder Name",
+      "documents": ["Document1", "Document2", "Document3"],
+      "tags": ["Tag1", "Tag2"]
+    },
+    "prioritize_tasks": {
+      "confirmation": "Tasks prioritized successfully",
+      "priority_list": [
+        {"name": "Task1", "deadline": "YYYY-MM-DD"},
+        {"name": "Task2", "deadline": "YYYY-MM-DD"}
+      ]
+    }
+  }
+}

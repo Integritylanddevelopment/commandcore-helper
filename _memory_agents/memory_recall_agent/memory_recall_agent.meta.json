@@ -1,0 +1,9 @@
+{
+  "name": "recall_agent",
+  "description": "Searches short-term index → filters summaries → fetches long-term memory files.",
+  "inputs": ["natural language query"],
+  "outputs": ["list of (filename, content) matches"],
+  "strategy": "3-stage semantic funnel: index → summary → full",
+  "decay": "10-day recall log cleanup on each run",
+  "tags": ["memory", "search", "context"]
+}

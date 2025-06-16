@@ -1,0 +1,70 @@
+# agents/roadmap_bot.py
+
+"""
+Agent Name: roadmap_bot
+Role: Planner
+Version: 1.0.0
+Description: Generates strategic project roadmaps based on project phase, goals, and constraints.
+"""
+
+import json
+from agents.agent_core import BaseAgent
+# Placeholder for roadmap generator logic
+def generate_roadmap(context):
+    return {
+        "milestones": [
+            f"Define roadmap for phase: {context.get('project_phase')}",
+            "Prioritize key goals",
+            "Mitigate known constraints"
+        ],
+        "timeline_estimate": "2 weeks",
+        "dependencies": ["Team alignment", "Tool access"]
+    }
+
+# Agent metadata
+agent_name = "roadmap_bot"
+agent_description = "Generates project roadmaps based on user input and current project phase"
+agent_role = "planner"
+agent_version = "1.0.0"
+
+# Input schema (for reference and validation)
+expected_input = {
+    "project_phase": "string",
+    "key_goals": ["string"],
+    "constraints": ["string"]
+}
+
+# Output schema (example)
+output_format = {
+    "milestones": ["string"],
+    "timeline_estimate": "string",
+    "dependencies": ["string"]
+}
+
+# Agent class
+class RoadmapBot(BaseAgent):
+    def __init__(self):
+        super().__init__(name=agent_name, description=agent_description, role=agent_role)
+
+    def run(self, context):
+        try:
+            if "project_phase" not in context or "key_goals" not in context:
+                raise ValueError("Missing required context keys: 'project_phase' or 'key_goals'")
+            result = generate_roadmap(context)
+            self.log("Roadmap generated successfully")
+            return result
+        except Exception as e:
+            self.error(f"Roadmap generation failed: {str(e)}")
+            return {"error": str(e)}
+
+# CLI test stub
+if __name__ == "__main__":
+    test_context = {
+        "project_phase": "MVP",
+        "key_goals": ["Launch Beta", "Onboard first 50 users"],
+        "constraints": ["Time crunch", "Solo dev"]
+    }
+    from core.upgrader import inject
+    bot = inject(RoadmapBot())
+    output = bot.run(test_context)
+    print(json.dumps(output, indent=2))

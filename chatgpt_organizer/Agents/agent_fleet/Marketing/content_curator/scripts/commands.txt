@@ -1,0 +1,6 @@
+# CLI commands or API hooks for Content Curator
+
+1. Initialize content curation.
+2. Process input data.
+3. Generate curated content.
+4. Output results in markdown format.

@@ -1,0 +1,2 @@
+# commands.txt for Voice Consistency
+TODO: Define command flow.

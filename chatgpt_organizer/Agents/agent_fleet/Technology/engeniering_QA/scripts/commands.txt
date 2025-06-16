@@ -1,0 +1,7 @@
+# commands.txt for Eng Feedback
+
+1. Collect feedback from engineers.
+2. Analyze feedback to identify trends and actionable items.
+3. Generate summary reports.
+4. Provide recommendations for process improvements.
+5. Share findings with stakeholders.
